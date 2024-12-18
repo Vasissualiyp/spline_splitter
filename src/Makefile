@@ -1,4 +1,8 @@
 CC=gcc
 
 main: main.c
-	$(CC) -o ^@ ^<
+	$(CC) $< -o $@
+
+clean:
+	rm -rf main
+	rm -rf output.csv
